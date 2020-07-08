@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import './App.css';
 
 function App() {
   const [todos, setTodos] = useState([
@@ -18,11 +17,11 @@ function App() {
   ]);
 
   return (
-    <div className="app">
-      <div className="todo-list">
+    <div className="container">
+      <div className="todos-card">
         {todos.map((todo, index) => (
           <div
-            className="todo"
+            className="task-item"
           >
             {todo.task}
           </div>
