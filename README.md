@@ -1,8 +1,8 @@
 Para peserta diharapkan untuk membuat sebuah website dengan styling dan layout yang bebas, namun WAJIB menerapkan beberapa hal untuk implementasi code nya:
-1. [x] Website dibangun menggunakan React JS dengan framework CRA.
-2. Component yang digunakan harus ada kedua-duanya yaitu Class dan Function Component.
+- [x] Website dibangun menggunakan React JS dengan framework CRA.
+- [x] Component yang digunakan harus ada kedua-duanya yaitu Class dan Function Component.
 3. Menggunakan LifeCycle method.
-4. Menerapkan metode Composing, Extracting Component dan Lifting State Up.
+- [x] Menerapkan metode Composing, Extracting Component dan Lifting State Up.
 5. Menggunakan Hooks (Nilai plus jika ada Custom Hooks).
 6. Website mengandung beberapa page dengan routing menggunakan React Router (react-router-dom).
 7. Menggunakan State Management, boleh pilih antara Context API atau Redux, maupun keduanya.

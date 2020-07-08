@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import TaskItem from './component/TaskItem';
 
 function App() {
   const [todos, setTodos] = useState([
@@ -18,15 +19,15 @@ function App() {
 
   return (
     <div className="container">
-      <div className="todos-card">
+      <ul className="todos-card">
         {todos.map((todo, index) => (
-          <div
-            className="task-item"
-          >
-            {todo.task}
-          </div>
+          <TaskItem
+            key={index}
+            index={index}
+            todo={todo}
+          />
         ))}
-      </div>
+      </ul>
     </div>
   );
 }
