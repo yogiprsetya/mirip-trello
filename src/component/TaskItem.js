@@ -2,10 +2,10 @@ import React from "react";
 
 class TaskItem extends React.Component {
   render() {
-    const { todo, key } = this.props;
+    const { todo, index } = this.props;
 
     return (
-      <li className="task-item" key={key}>
+      <li className="task-item" key={index}>
         {/* <li className="todo"> */}
           { todo.task }
         {/* </li> */}

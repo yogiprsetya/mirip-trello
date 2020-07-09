@@ -1,33 +1,43 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import TaskItem from './component/TaskItem';
+import InputTask from './component/InputTask';
 
 function App() {
-  const [todos, setTodos] = useState([
+  const [taskList, settaskList] = useState([
     {
       task: "framework CRA",
-      markDone: false
+      done: false
     },
     {
       task: "Function Component",
-      markDone: false
+      done: false
     },
     {
       task: "LifeCycle method",
-      markDone: false
+      done: false
     }
   ]);
 
+  const addTask = task => {
+    const newTask = [...taskList, { task }];
+    settaskList(newTask);
+  };
+
   return (
     <div className="container">
-      <ul className="todos-card">
-        {todos.map((todo, index) => (
-          <TaskItem
-            key={index}
-            index={index}
-            todo={todo}
-          />
-        ))}
-      </ul>
+      <div className="todos-card">
+        <ul>
+          {taskList.map((todo, i) => (
+            <TaskItem
+              key={i}
+              index={i}
+              todo={todo}
+            />
+          ))}
+        </ul>
+
+        <InputTask add={ addTask }/>
+      </div>
     </div>
   );
 }
