@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-function InputTask({add}) {
+function InputTask({ add }) {
   const [value, setValue] = useState('');
 
-  const handleSubmit = e => {
+  const submitNewTask = e => {
     e.preventDefault();
     if (!value) return;
     add(value);
@@ -11,7 +11,7 @@ function InputTask({add}) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="input-task">
+    <form onSubmit={submitNewTask} className="input-task">
       <input
         type="text"
         placeholder="New task ..."
