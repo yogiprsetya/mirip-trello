@@ -1,0 +1,19 @@
+blockquote {
+	background: #fafbfc;
+  border-radius: 10px;
+  color: #000;
+	max-width: 500px;
+  width: 100%;
+  padding: 30px;
+  box-shadow: 5px -5px 8px -1px rgba(199, 199, 199, 0.6);
+  margin: 40px auto 0;
+
+  cite {
+    text-align: right;
+    color: #868686;
+    font-style: italic;
+    font-size: 95%;
+    margin-top: 15px;
+    display: block;
+  }
+}

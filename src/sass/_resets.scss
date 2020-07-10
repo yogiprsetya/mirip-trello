@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  padding: 50px;
+  padding: 30px 50px 50px;
   display: flex;
   align-items: flex-start;
   align-content: flex-start;
@@ -19,5 +19,10 @@ ul li {
   margin:0;
   padding: 0;
   text-indent: 0;
-  list-style-type: 0;
+  list-style-type: none;
+}
+
+article {
+  width: 100%;
+  color: #fff;
 }
