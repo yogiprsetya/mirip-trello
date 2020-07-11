@@ -13,6 +13,7 @@ import RandomQuote from 'pages/RandomQuote';
 
 export class App extends React.Component {
   render() {
+    // switch mode
     if (this.props.mode.color === 'dark') {
       document.body.classList.add('dark');
       document.body.classList.remove('light');
@@ -29,6 +30,7 @@ export class App extends React.Component {
             <li><Link to="/wiki-dev">Wiki Dev</Link></li>
             <li><Link to="/daily-quote">Geeks Quote</Link></li>
             <li>
+              {/* Buttom switch mode */}
               { this.props.mode.color ? (
                 <button onClick={this.props.lightMode}>Light Mode</button>
               ) : (

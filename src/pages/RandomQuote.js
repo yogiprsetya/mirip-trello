@@ -6,6 +6,7 @@ class RandomQuote extends React.Component {
   }
 
   componentDidMount() {
+    // Generate random tech quotes
     fetch('https://programming-quotes-api.herokuapp.com/quotes/random')
     .then(response => response.json())
     .then(data => {
@@ -14,7 +15,7 @@ class RandomQuote extends React.Component {
       })
     })
     .catch(err => {
-      console.log('Fetch Error :-S', err);
+      console.log(err);
     })
   }
 
@@ -22,6 +23,7 @@ class RandomQuote extends React.Component {
     const { content } = this.state;
 
     return (
+      // Create blockquote style 
       <article>
         <blockquote>
           { content.en }

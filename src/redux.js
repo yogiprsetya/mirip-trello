@@ -3,7 +3,7 @@ import {
   createStore,
 } from 'redux';
 
-// actions.js
+// actions
 export const darkMode = mode => ({
   type: 'DARK_MODE',
   mode,
@@ -13,7 +13,7 @@ export const lightMode = () => ({
   type: 'LIGHT_MODE',
 });
 
-// reducers.js
+// reducers
 export const mode = (state = {}, action) => {
   switch (action.type) {
     case 'DARK_MODE':
@@ -29,7 +29,7 @@ export const reducers = combineReducers({
   mode,
 });
 
-// store.js
+// store
 export function configureStore(initialState = {}) {
   const store = createStore(reducers, initialState);
   return store;

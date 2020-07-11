@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 function InputTask({ add }) {
   const [value, setValue] = useState('');
 
+  // Handle submit new task
   const submitNewTask = e => {
     e.preventDefault();
     if (!value) return;
