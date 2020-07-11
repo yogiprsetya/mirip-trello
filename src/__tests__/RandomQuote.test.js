@@ -1,6 +1,5 @@
 import React from 'react';
 import { render, screen, act } from '@testing-library/react';
-import { shallow } from 'enzyme';
 import RandomQuote from 'pages/RandomQuote.js';
 
 global.fetch = jest.fn(() =>

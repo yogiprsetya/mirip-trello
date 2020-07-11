@@ -12,7 +12,6 @@ class RandomQuote extends React.Component {
       this.setState({
         content: data
       })
-      console.log(data)
     })
     .catch(err => {
       console.log('Fetch Error :-S', err);
