@@ -7,9 +7,9 @@ import  {
 } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { darkMode, lightMode } from './redux';
-import WikiDev from './pages/WikiDev';
-import CardContainer from './pages/CardContainer';
-import RandomQuote from './pages/RandomQuote';
+import WikiDev from 'pages/WikiDev';
+import CardContainer from 'pages/CardContainer';
+import RandomQuote from 'pages/RandomQuote';
 
 export class App extends React.Component {
   render() {

@@ -7,7 +7,7 @@ Para peserta diharapkan untuk membuat sebuah website dengan styling dan layout y
 - [x] Website mengandung beberapa page dengan routing menggunakan React Router (react-router-dom).
 - [x] Menggunakan State Management, boleh pilih antara Context API atau Redux, maupun keduanya.
 - [x] Terdapat form (boleh Uncontrolled maupun controlled) dan juga lists.
-9. Terdapat unit testing untuk masing-masing komponen atau page keseluruhan.
+- [x] Terdapat unit testing untuk masing-masing komponen atau page keseluruhan.
 
 Para peserta WAJIB melakukan hal-hal berikut:
 1. Poin plus jika peserta men-deploy website nya ke Firebase hosting.
