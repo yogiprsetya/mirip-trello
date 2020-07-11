@@ -4,7 +4,22 @@ body {
   font-size: 16px;
   font-weight: 400;
   height: 100vh;
+}
+
+.light {
+  background: #fff;
+
+  article {
+    color: #24292e;
+  }
+}
+
+.dark {
   background: #24292e;
+
+  article {
+    color: #fff;
+  }
 }
 
 .container {
@@ -24,5 +39,4 @@ ul li {
 
 article {
   width: 100%;
-  color: #fff;
 }

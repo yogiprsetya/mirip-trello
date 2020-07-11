@@ -5,38 +5,16 @@ import InputTask from '../component/InputTask';
 function App() {
   const [taskList, setTaskList] = useState([
     {
-      headline: "Plan",
-      todo: [{
-        note: "Framework CRA",
-        done: false
-      }, {
-        note: "Redux State Management",
-        done: false
-      }, {
-        note: "Lifting state",
-        done: false
-      }]
-    }, {
-      headline: "WIP",
-      todo: [{
-        note: "Thunk & middleware",
-        done: false
-      }, {
-        note: "Deployment",
-        done: false
-      }, {
-        note: "Helper function",
-        done: false
-      }]
-    }, {
-      headline: "Review",
-      todo: [{
-        note: "Firebase hosting",
-        done: false
-      }, {
-        note: "Unit testing",
-        done: false
-      }]
+      task: "framework CRA",
+      done: false
+    },
+    {
+      task: "Function Component",
+      done: false
+    },
+    {
+      task: "LifeCycle method",
+      done: false
     }
   ]);
 
@@ -45,41 +23,38 @@ function App() {
     setTaskList(newTask);
   };
 
-  const changeTaskStatus = (card, index) => {
+  const changeTaskStatus = index => {
     const newTask = [...taskList];
-    const updates = newTask[card].todo[index];
+    const updates = newTask[index];
 
     updates.done ? updates.done = false : updates.done = true;
 
     setTaskList(newTask);
   };
 
-  const removeTask = (card, index) => {
+  const removeTask = index => {
     const newTask = [...taskList];
-    newTask[card].todo.splice(index, 1);
+    newTask.splice(index, 1);
     setTaskList(newTask);
   };
 
   return (
     <div className="container">
-      {taskList.map((card, i) => (
-        <div key={i} className="todos-card">
-          <h3>{card.headline}</h3>
-          <ul>
-            {card.todo.map((todo, j) => (
-              <TaskItem
-                card={i}
-                key={j}
-                index={j}
-                todo={todo}
-                markDone={changeTaskStatus}
-                removeTask={removeTask}
-              />
-            ))}
-          </ul>
-          <InputTask add={ addTask }/>
-        </div>
-      ))}
+      <div className="todos-card">
+        <h3>To Do List</h3>
+        <ul>
+          {taskList.map((todo, i) => (
+            <TaskItem
+              key={i}
+              index={i}
+              todo={todo}
+              markDone={changeTaskStatus}
+              removeTask={removeTask}
+            />
+          ))}
+        </ul>
+        <InputTask add={ addTask }/>
+      </div>
     </div>
   );
 }

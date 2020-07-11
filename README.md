@@ -2,11 +2,11 @@ Para peserta diharapkan untuk membuat sebuah website dengan styling dan layout y
 - [x] Website dibangun menggunakan React JS dengan framework CRA.
 - [x] Component yang digunakan harus ada kedua-duanya yaitu Class dan Function Component.
 - [x] Menggunakan LifeCycle method.
-- Menerapkan metode Composing, Extracting Component dan Lifting State Up.
-5. Menggunakan Hooks (Nilai plus jika ada Custom Hooks).
+- [x] Menerapkan metode Composing, Extracting Component dan Lifting State Up.
+- [x] Menggunakan Hooks (Nilai plus jika ada Custom Hooks).
 - [x] Website mengandung beberapa page dengan routing menggunakan React Router (react-router-dom).
-7. Menggunakan State Management, boleh pilih antara Context API atau Redux, maupun keduanya.
-8. Terdapat form (boleh Uncontrolled maupun controlled) dan juga lists.
+- [x] Menggunakan State Management, boleh pilih antara Context API atau Redux, maupun keduanya.
+- [x] Terdapat form (boleh Uncontrolled maupun controlled) dan juga lists.
 9. Terdapat unit testing untuk masing-masing komponen atau page keseluruhan.
 
 Para peserta WAJIB melakukan hal-hal berikut:

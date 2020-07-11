@@ -2,7 +2,7 @@ import React from "react";
 
 class TaskItem extends React.Component {
   render() {
-    const { todo, card, index, markDone, removeTask } = this.props;
+    const { todo, index, markDone, removeTask } = this.props;
 
     return (
       <li
@@ -10,11 +10,11 @@ class TaskItem extends React.Component {
         key={index}
         style={{ textDecoration: todo.done ? 'line-through' : '' }}
       >
-        { todo.note }
+        { todo.task }
 
         <div>
-          <button onClick={() => markDone(card, index)}>{ todo.done ? 'Undone!' : 'Done!' }</button>
-          <button onClick={() => removeTask(card, index)}>x</button>
+          <button onClick={() => markDone(index)}>{ todo.done ? 'Undone!' : 'Done!' }</button>
+          <button onClick={() => removeTask(index)}>x</button>
         </div>
       </li>
     );

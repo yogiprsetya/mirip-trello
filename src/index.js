@@ -4,10 +4,13 @@ import './sass/App.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import { Provider } from 'react-redux';
+import { store } from './redux';
+
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 

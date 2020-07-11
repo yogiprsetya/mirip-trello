@@ -1,5 +1,5 @@
 header {
-  background: #fafbfc;
+  background:#090a0b;
   padding: 20px;
 
   ul {
@@ -9,11 +9,16 @@ header {
     a {
       font-weight: 500;
       text-decoration: none;
-      color: #000;
+      color: #fff;
     }
 
     li:not(:last-child) {
-      margin-right: 10px;
+      margin-right: 20px;
+    }
+
+    li:last-child {
+      right: 20px;
+      position:absolute
     }
   }
 }
